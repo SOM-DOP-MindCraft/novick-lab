@@ -1,8 +1,9 @@
 ---
 layout: page
-parent: fMRI preprocessing
+parent: Tutorials
 title: Getting Started
-permalink: /Tutorials/preprocessing-fmri/gettingstarted
+has_children: true
+permalink: /Tutorials/gettingstarted
 ---
 
 # Before we start
