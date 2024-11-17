@@ -2,7 +2,7 @@
 layout: page
 parent: fMRI preprocessing
 title: Getting Started
-permalink: /Tutorials/preprocessing-fmri/gettingstarted.md
+permalink: /Tutorials/preprocessing-fmri/gettingstarted
 ---
 
 # Before we start
