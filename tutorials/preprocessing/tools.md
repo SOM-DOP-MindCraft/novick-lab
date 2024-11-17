@@ -76,8 +76,11 @@ docker run –rm hello-world
 - You can pull a specific version of fmriprep docker using `docker pull nipreps/fmriprep:23.0.2`
   - Read up on the appropriate version [here](https://www.nipreps.org/apps/docker/#running-a-niprep-with-a-lightweight-wrapper)
 - You should install a wrapper to allow fmriprep to run using a script. This is described [here](https://reproducibility.stanford.edu/fmriprep-tutorial-running-the-docker-image/)
-```pip install --user --upgrade fmriprep-docker```
-- Add info to your profile
+- Can also use pip (another package manager) to install using
+```
+pip install --user --upgrade fmriprep-docker
+```
+- Once installed, you'll need to add it to your profile
   - `bbedit ~/.zshrc`
   - Add the line `export PATH=/Users/fmriuser/.local/bin:$PATH`
   - Open a new terminal to update the path or run this command `source ~/.zshrc`
