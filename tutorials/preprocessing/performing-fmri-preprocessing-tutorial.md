@@ -2,6 +2,7 @@
 layout: page
 parent: Tutorials
 title: fMRI preprocessing
+has_children: true
 permalink: /Tutorials/preprocessing-fmri
 ---
 
