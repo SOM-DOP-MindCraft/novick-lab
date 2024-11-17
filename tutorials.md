@@ -1,6 +1,6 @@
 ---
 layout: page
-title: fMRI preprocessing
+title: tutorials
 permalink: /tutorials
 ---
 
