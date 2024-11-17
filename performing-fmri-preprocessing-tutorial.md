@@ -1,7 +1,8 @@
 ---
 layout: page
+parent: Tutorials
 title: fMRI preprocessing
-permalink: /tutorial/preprocessing-fmri
+permalink: /Tutorials/preprocessing-fmri
 ---
 
 # Introduction
