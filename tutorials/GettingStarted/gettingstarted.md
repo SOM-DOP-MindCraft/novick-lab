@@ -3,12 +3,14 @@ layout: page
 parent: Tutorials
 title: Getting Started
 has_children: true
-permalink: /Tutorials/gettingstarted
+permalink: /Tutorials/GettingStarted
 ---
 
 # Before we start
-Our lab will be storing files using the [BIDS](https://bids.neuroimaging.io/) standard.  As such, you'll need to 
-create a project folder, some initial folders to store your data, and a configuration file.
+Our lab will be storing files using the [BIDS](https://bids.neuroimaging.io/) standard.  As such, you'll need to setup your machine, create a project folder, some initial folders to store your data, and a configuration file.
+
+## Make sure you've installed all the necessary tools
+Check out our [tools](https://neurodoclove.github.io/novick-lab/Tutorials/GettingStarted/tools) page to make sure all the necessary tools have been installed and configured before beginning
 
 ## Create a directory tree to store your data
 ```
