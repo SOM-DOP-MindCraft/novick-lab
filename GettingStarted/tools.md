@@ -2,7 +2,7 @@
 layout: page
 parent: Getting Started
 title: Tools
-permalink: /Tutorials/gettingstarted/tools
+permalink: /GettingStarted/tools
 ---
 
 # Introduction
