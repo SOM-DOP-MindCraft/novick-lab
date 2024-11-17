@@ -1,8 +1,8 @@
 ---
 layout: page
-parent: fMRI preprocessing
+parent: Getting Started
 title: Tools
-permalink: /Tutorials/preprocessing/tools
+permalink: /Tutorials/gettingstarted/tools
 ---
 
 # Introduction
