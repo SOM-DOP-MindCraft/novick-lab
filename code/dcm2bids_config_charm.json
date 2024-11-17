@@ -1,0 +1,100 @@
+{
+  "descriptions": [
+    {
+      "datatype": "anat",
+      "suffix": "T1w",
+      "criteria": {
+        "SeriesDescription": "t1_mprage_sag_p2"
+      },
+      "sidecar_changes": {
+        "ProtocolName": "T1"
+      }
+    },
+    {
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-reward_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_Reward Task_A" 
+      },
+      "sidecar_changes": {
+        "TaskName": "reward",
+        "AcquisitionDuration":""
+      }
+    },
+    {
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-reward_run-02",
+      "criteria": {
+        "SeriesDescription": "fMRI_Reward Task_B" 
+      },
+      "sidecar_changes": {
+        "TaskName": "reward",
+        "AcquisitionDuration":""
+      }
+    },
+    {
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-reward_run-03",
+      "criteria": {
+        "SeriesDescription": "fMRI_Reward Task_C"
+      },
+      "sidecar_changes": {
+        "TaskName": "reward",
+        "AcquisitionDuration":""
+      }
+    },
+    {
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-rest_dir-ap_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_rest_AP"
+      },
+      "sidecar_changes": {
+        "TaskName": "rest",
+        "AcquisitionDuration":""
+      }
+    },
+    {
+      "datatype": "func",
+      "suffix": "bold",
+      "custom_entities": "task-rest_dir-pa_run-01",
+      "criteria": {
+        "SeriesDescription": "fMRI_rest_PA"
+      },
+      "sidecar_changes": {
+        "TaskName": "rest",
+        "AcquisitionDuration":""
+      }
+    },
+    {
+      "datatype": "fmap",	
+      "suffix": "magnitude1",
+      "criteria": {
+      	"SeriesDescription": "field_map_3mm",
+      	"EchoNumber": 1,
+        "SidecarFilename": "*e1.json"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "magnitude2",
+      "criteria": {
+      	"SeriesDescription": "field_map_3mm",
+      	"EchoNumber": 2,
+		"SidecarFilename": "*e2.json"
+      }
+    },
+    {
+      "datatype": "fmap",
+      "suffix": "phasediff",
+      "criteria": {
+      	"SeriesDescription": "field_map_3mm",
+        "SidecarFilename": "*e2_ph.json"
+      }
+    }
+]
+}
