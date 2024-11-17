@@ -3,7 +3,7 @@ layout: page
 parent: Tutorials
 title: Getting Started
 has_children: true
-permalink: /Tutorials/GettingStarted
+permalink: /Tutorials/GettingStarted/GettingStared
 ---
 
 # Before we start
