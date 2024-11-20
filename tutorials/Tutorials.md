@@ -5,6 +5,3 @@ permalink: /tutorials/Tutorials
 has_children: true
 has_toc: true
 ---
-
-# Tutorials
-Here are some common methods and tutorials for processes done in the Novick Lab.
