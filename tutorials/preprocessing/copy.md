@@ -1,8 +1,8 @@
 ---
 layout: page
 parent: fMRI preprocessing
-title: 1. Copy Data and BIDS-ify
-permalink: /Tutorials/preprocessing/copy-convert
+title: 1. Copy Data from BIC
+permalink: /Tutorials/preprocessing/copy
 ---
 
 # Introduction
