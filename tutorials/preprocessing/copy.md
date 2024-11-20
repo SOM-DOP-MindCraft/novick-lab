@@ -8,7 +8,10 @@ permalink: /Tutorials/preprocessing/copy
 # Introduction
 We will need to copy over the  data from our local neuroimaging center [BIC](https://medschool.cuanschutz.edu/psychiatry/research/services/brain-imaging-center), convert these files into BIDS format, and copy over the Eprime files collected during the scan to begin.
 
-**Note** Accessing BIC and REDCap servers requires special authorization.  Contact Dr. Novick to obtain this.
+**NOTE:** The following code assumes you are starting in the main study directory. To change into the main directory:
+```
+cd /Users/Shared/charm/data/bids_data/
+```
 
 # Copying Data From the BIC
 1. Review [REDCap](https://redcap.ucdenver.edu/redcap_v14.5.19/DataExport/index.php?pid=21666&report_id=129155) to determine which participant's have completed a scanning session and require preprocessing.
@@ -19,7 +22,6 @@ ls /Volumes/bic-server.ucdenver.pvt
 ```
 4. If BIC is mounted, change into the main bids directory (e.g., /Users/Shared/charm/data/bids_data/) and run the following
 ```
-cd /Users/Shared/charm/data/bids_data/
 code/charm_1_copy_bic_data.sh -p participant_id -s session_id
 ```
 This will locate a DICOM folder containing all the imaging files for a given participant/session and then copy these data into the 'sourcedata' directory (e.g., /Users/Shared/charm/data/bids_data/sourcedata).  This will be the home of all 'raw' data for the study.
