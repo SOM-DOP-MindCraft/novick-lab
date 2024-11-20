@@ -20,5 +20,4 @@ code/charm_2_dcm2bids.sh -p participant_id -s session_id
 ```
 bids-validator /Users/Shared/charm/data/bids_data/
 ```
-Take note of any warnings or errors.
-5. Mark **Imaging QA** appropriately. If you ran into any issues, make a note.
+5. Mark **Imaging QA** appropriately. If you ran into any issues or if bids_validator threw any errors, make a note.
