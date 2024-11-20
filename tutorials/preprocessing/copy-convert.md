@@ -23,8 +23,11 @@ cd /Users/Shared/charm/data/bids_data/
 code/charm_1_copy_bic_data.sh -p participant_id -s session_id
 ```
 This will locate a DICOM folder containing all the imaging files for a given participant/session and then copy these data into the 'sourcedata' directory (e.g., /Users/Shared/charm/data/bids_data/sourcedata).  This will be the home of all 'raw' data for the study.
-
-5. Mark **Imaging QA** appropriately. If you run into any issues copying these data, make a note.
+5. Verify the files for this participant's session are now in the sourcedata directory
+```
+ls /Users/Shared/charm/data/bids_data/sourcedata/partipantid_session
+```
+6. Mark **Imaging QA** appropriately. If you run into any issues copying these data, make a note.
 
 
 # BIDS-ifying Data
