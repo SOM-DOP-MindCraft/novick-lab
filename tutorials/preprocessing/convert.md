@@ -8,10 +8,14 @@ permalink: /Tutorials/preprocessing/convert
 # Introduction
 After copying over data from the BIC, we need to convert these files into BIDS format.
 
+**NOTE:** The following code assumes you are starting in the main study directory. To change into the main directory:
+```
+cd /Users/Shared/charm/data/bids_data/
+```
+
 # BIDS-ifying Data
 1. Assuming the scan ran as planned, you should be able to convert the files you copied into sourcedata into BIDS format using dcm2bids and the standard configuration using the following commands
 ```
-cd /Users/Shared/charm/data/bids_data/
 code/charm_2_dcm2bids.sh -p participant_id -s session_id
 ```
 2. Watch the terminal window and take note of any errors or warnings. After the script is complete, a new directory will be made labeled sub-participantid. Review the contents of this directory and make sure all expected files are in there and there are no extra files (e.g., `ls`).
