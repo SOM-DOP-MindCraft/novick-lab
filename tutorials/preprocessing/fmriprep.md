@@ -17,7 +17,7 @@ cd /Users/Shared/charm/data/bids_data/
 
 2. Once docker is running, make sure you are in the main bids directory (e.g., /Users/Shared/charm/data/bids_data/) and run the following
 ```
-code/charm_3_copy_bic_data.sh -p participant_id
+code/charm_3_fmriprep.sh -p participant_id
 ```
 This will begin the fmriprep preprocessing stream.  It will copy over the raw sub-* folder contents into the `/Users/Shared/charm/data/bids_data/derivatives/fmriprep_v2` folder and prepare the data.  
 This will take approximately 12 hours per participant. Be careful not to close or interrupt the terminal window while this is being done.
