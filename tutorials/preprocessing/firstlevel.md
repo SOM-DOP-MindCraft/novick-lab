@@ -1,7 +1,7 @@
 ---
 layout: page
 parent: fMRI preprocessing
-title: 5. Generate first level analyses
+title: 6. Generate first level analyses
 permalink: /Tutorials/preprocessing/firstlevel
 ---
 
