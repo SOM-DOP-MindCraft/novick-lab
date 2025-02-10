@@ -1,7 +1,7 @@
 ---
 layout: page
 parent: fMRI preprocessing
-title: 4. Organize onsets and unzip files
+title: 5. Smooth functional files
 permalink: /Tutorials/preprocessing/smooth
 ---
 
