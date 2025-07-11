@@ -1,7 +1,7 @@
 ---
 layout: page
 parent: fMRI preprocessing
-title: 4. Organize onsets and unzip files
+title: 3. Copy eprime data and organize onset data
 permalink: /Tutorials/preprocessing/organize
 ---
 
@@ -10,20 +10,19 @@ permalink: /Tutorials/preprocessing/organize
 cd /Users/Shared/charm/data/bids_data/
 ```
 
-# Organizing onsets
-1. In this study, we are utilizing E-prime to run the task. E-prime will produce files (*.edat3 and Reward_Task*.txt and OnsetTimes*.txt) for each run that will list the onset information alongside relevant behavior information (e.g., RT and RESP).  Before we move on, we need to make sure these files (which are stored in REDCap) are copied into the proper subject directory located in:
-```
-ls /Users/Shared/charm/data/bids_data/sourcedata/<subject_id>/<ses-id>
-```
-2. Once these files are in place, make sure you are in the main bids directory (e.g., /Users/Shared/charm/data/bids_data/) and run the following
-```
-code/charm_4_organize_firstlevel_inputs.sh -p participant_id -s session_id
-```
-This will, first, parse out OnsetTimes into files for each of the individual contrasts for each of the runs. Then the script will then unzip the files that will be used during first level analyses which are contained in the derivatives directory for each subject/session and include the label `space-MNI152NLin6Asym_res-02_desc-preproc_bold`.
+# Copy Eprime data
+1. In this study, we are utilizing E-prime to run the task. E-prime will produce files (*.edat3 and Reward_Task*.txt and OnsetTimes*.txt) for each run that will list the onset information alongside relevant behavior information (e.g., RT and RESP). Eprime data for each session is uploaded into [REDCap](https://redcap.ucdenver.edu/redcap_v14.5.19/DataExport/index.php?pid=21666&report_id=129155).  You can download these files by clicking on each of the links.
+2. Copy the eprime data into the sourcedata/participantid/session directory
+3. Mark **Imaging QA** in REDCap appropriately. If you run into any issues copying these data, make a note.
 
-# Review output
-1. Once the script is finished, check the subject/session directory under `/Users/Shared/charm/data/bids_data/sourcedata`.  You should see files representing each of the conditions for each of the runs (e.g., Neutral Cue, Pleasant Cue, Neutral Pic, Pleasant Pic, etc).:
-2. Next, check to make sure the appropriate fmriprep file has been unzipped
+
+# Organizing onsets
+1. We will need to convert the eprime files into a format that will be readable by our later first level scripts.  To accomplish this, run the following:
 ```
-ls /Users/Shared/charm/data/bids_data/derivatives/fmriprep_v2/<subject_id>/<ses-id>/func/*space-MNI152NLin6Asym_res-02_desc-preproc_bold*
+code/charm_3_organize_firstlevel_inputs.sh -p participant_id -s session_id
 ```
+This will parse out OnsetTimes into files for each of the individual contrasts for each of the runs..
+
+# Review onset output
+1. Once the script is finished, check the subject/session directory under `/Users/Shared/charm/data/bids_data/sourcedata`.  You should see files representing each of the conditions for each of the runs (e.g., Neutral Cue, Pleasant Cue, Neutral Pic, Pleasant Pic, etc).
+2. Mark **Imaging QA** in REDCap appropriately. If you run into any issues or are missing files, make a note.
