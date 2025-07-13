@@ -30,5 +30,5 @@ charm_7_firstlevel
 ```
 4.  You will now be able to locate these subject's first level directories within:
 ```
-/Users/Shared/charm/data/bids_data/derivatives/1stlevel_20250120
+/Volumes/Expansion/charm/data/bids_data/derivatives/1stlevel_20250712
 ```
