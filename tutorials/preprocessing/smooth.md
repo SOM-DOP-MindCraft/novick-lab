@@ -17,7 +17,7 @@ cd /Users/Shared/charm/data/bids_data/
 ```
 2. To edit the file, navigate to the code directory then type:
 ```
-edit charm_5_spm_smooth_firstlevel_noorth_multi.m
+edit charm_6_spm_smooth_firstlevel_noorth_multi.m
 ```
 The only line that should need to be adjusted is the subjects line.  You should replace the subject ids listed with the ones you wish to run.  For example, this line looks something like:
 ```
@@ -26,5 +26,5 @@ subjects = {'40376', '40378', '40383', '40394', '40397','40401','40407'};
 You may also adjust the session number if need be. 
 3. Once you've made the necesary changes to the file, you can save it, then run it.  You can do this by clicking Run or by typing the following into the Matlab command window:
 ```
-charm_5_spm_smooth_firstlevel_noorth_multi.m
+charm_6_spm_smooth_firstlevel_noorth_multi.m
 ```
