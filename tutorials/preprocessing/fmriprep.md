@@ -12,7 +12,6 @@ cd /Users/Shared/charm/data/bids_data/
 
 # Running fmriprep
 1. Verify that the docker application is running by looking at the dock and locating the docker application
-```
 >If the docker is *not* running, go to Finder, go to the application folder and open Docker
 
 2. Once docker is running, make sure you are in the main bids directory (e.g., /Users/Shared/charm/data/bids_data/) and run the following
