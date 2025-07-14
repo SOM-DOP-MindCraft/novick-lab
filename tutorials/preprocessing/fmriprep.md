@@ -32,6 +32,6 @@ cd /Volumes/Expansion/charm/data/bids_data/derivatives/fmriprep_v3/
 # Check motion
 1. You'll need to copy over the motion stats for each of the funcitonal runs into **Imaging QA**. To grab this info, run the following
 ```
-code/charm_5_chkmotion.sh -p participant_id
+code/charm_5_chkmotion.sh -p participant_id -s session_id
 ```
 2. The output of this code will be a text listing of motion parameters for each of the functional runs.
