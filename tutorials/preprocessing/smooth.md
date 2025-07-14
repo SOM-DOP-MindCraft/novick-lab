@@ -13,7 +13,7 @@ cd /Users/Shared/charm/data/bids_data/
 # Smooth files
 1. Prior to running our first level analyses, we'll need to smooth our functional data.  We've created a batch script to be able to smooth multiple subjects files at once. This script will need to be run in Matlab (can be found in the Applications folder).  Once in Matlab, you can open and edit this file:
 ```
-/Users/Shared/charm/data/bids_data/code/charm_5_spm_smooth_firstlevel_noorth_multi.m
+/Users/Shared/charm/data/bids_data/code/charm_6_spm_smooth_firstlevel_noorth_multi.m
 ```
 2. To edit the file, navigate to the code directory then type:
 ```
