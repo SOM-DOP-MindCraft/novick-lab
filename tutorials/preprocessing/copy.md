@@ -23,7 +23,7 @@ cd /Users/Shared/charm/data/bids_data/
 ```
 ls /Volumes/bic-server.ucdenver.pvt
 ```
->If the BIC is *not* mounted, go to Finder, select Go... and Connect to Server... select the server smb:/bic-server.ucdenver.pvt and login using your university credentials.
+>If the BIC is *not* mounted, go to Finder, select Go... and Connect to Server... select the server smb://bic-server.ucdenver.pvt and login using your university credentials.
 
 2. Once BIC is mounted, make sure you are in the main bids directory (e.g., /Users/Shared/charm/data/bids_data/) and run the following
 ```
