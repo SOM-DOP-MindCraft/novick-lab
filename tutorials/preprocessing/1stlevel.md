@@ -19,7 +19,7 @@ cd /Users/Shared/charm/data/bids_data/
 ```
 /Users/Shared/charm/data/bids_data/code/charm_7_firstlevel.sh -p participant_id -s session_id
 ```
-3. Once completed, you should review each session's first level analysis to make sure everything ran as expected.  Specifically, review the design matrix to make sure all the appropriate factors were included, review the mask to ensure we are sampling across the brain correctly, and take note of any other oddities.  See Andy's brain book for [more info](https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/SPM_Statistics/SPM_06_Stats_Running_1stLevel_Analysis.html). All first level analyses are stored in:
+3. Once completed, you should review each session's first level analysis in SPM to make sure everything ran as expected. You can open SPM by opening matlab and typing `spm fmri` at the prompt, selecting `Results`, choosing the session's SPM.mat file, then picking the contrast of interest.  Specifically, you should review the design matrix to make sure all the appropriate factors were included, review the mask to ensure we are sampling across the brain correctly, and take note of any other oddities.  See Andy's brain book for [more info](https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/SPM_Statistics/SPM_06_Stats_Running_1stLevel_Analysis.html). All first level analyses are stored in:
 ```
 /Volumes/Expansion/charm/data/bids_data/derivatives/1stlevel_20251010/
 ```
